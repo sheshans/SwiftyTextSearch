@@ -1,9 +1,9 @@
 //
 //  SwiftyTextSearch.swift
-//
+//  SwiftyTextSearch
 //
 //  Created by Sheshans Yadav on 7/2/17.
-//
+//  Copyright (c) 2017 Sheshans Yadav. All rights reserved.
 //
 
 import UIKit
