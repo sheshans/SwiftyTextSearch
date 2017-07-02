@@ -10,6 +10,8 @@
 		18A51C0C1F08C8D8008F9A22 /* SwiftyTextSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A51C021F08C8D8008F9A22 /* SwiftyTextSearch.framework */; };
 		18A51C111F08C8D8008F9A22 /* SwiftyTextSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A51C101F08C8D8008F9A22 /* SwiftyTextSearchTests.swift */; };
 		18A51C131F08C8D8008F9A22 /* SwiftyTextSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A51C051F08C8D8008F9A22 /* SwiftyTextSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A51C1E1F08C980008F9A22 /* SwiftyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A51C1C1F08C980008F9A22 /* SwiftyText.swift */; };
+		18A51C1F1F08C980008F9A22 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A51C1D1F08C980008F9A22 /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		18A51C0B1F08C8D8008F9A22 /* SwiftyTextSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyTextSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A51C101F08C8D8008F9A22 /* SwiftyTextSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyTextSearchTests.swift; sourceTree = "<group>"; };
 		18A51C121F08C8D8008F9A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A51C1C1F08C980008F9A22 /* SwiftyText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyText.swift; sourceTree = "<group>"; };
+		18A51C1D1F08C980008F9A22 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				18A51C051F08C8D8008F9A22 /* SwiftyTextSearch.h */,
+				18A51C1C1F08C980008F9A22 /* SwiftyText.swift */,
+				18A51C1D1F08C980008F9A22 /* Node.swift */,
 				18A51C061F08C8D8008F9A22 /* Info.plist */,
 			);
 			path = SwiftyTextSearch;
@@ -149,6 +155,7 @@
 					18A51C011F08C8D8008F9A22 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = LNJMAJ4X3Q;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					18A51C0A1F08C8D8008F9A22 = {
@@ -198,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A51C1E1F08C980008F9A22 /* SwiftyText.swift in Sources */,
+				18A51C1F1F08C980008F9A22 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +273,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -324,6 +333,7 @@
 		18A51C171F08C8D8008F9A22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LNJMAJ4X3Q;
@@ -332,10 +342,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyTextSearch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shesh.SwiftyTextSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +355,7 @@
 		18A51C181F08C8D8008F9A22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LNJMAJ4X3Q;
@@ -351,6 +364,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftyTextSearch/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Shesh.SwiftyTextSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,6 +376,7 @@
 		18A51C1A1F08C8D8008F9A22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LNJMAJ4X3Q;
 				INFOPLIST_FILE = SwiftyTextSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +389,7 @@
 		18A51C1B1F08C8D8008F9A22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LNJMAJ4X3Q;
 				INFOPLIST_FILE = SwiftyTextSearchTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +418,7 @@
 				18A51C181F08C8D8008F9A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18A51C191F08C8D8008F9A22 /* Build configuration list for PBXNativeTarget "SwiftyTextSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +427,7 @@
 				18A51C1B1F08C8D8008F9A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

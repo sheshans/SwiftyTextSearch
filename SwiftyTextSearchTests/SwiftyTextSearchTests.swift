@@ -3,7 +3,7 @@
 //  SwiftyTextSearchTests
 //
 //  Created by apple on 7/2/17.
-//  Copyright © 2017 Mirraw. All rights reserved.
+//  Copyright © 2017 Sheshans Yadav. All rights reserved.
 //
 
 import XCTest

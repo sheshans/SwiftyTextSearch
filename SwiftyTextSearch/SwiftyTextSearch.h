@@ -2,8 +2,8 @@
 //  SwiftyTextSearch.h
 //  SwiftyTextSearch
 //
-//  Created by apple on 7/2/17.
-//  Copyright © 2017 Mirraw. All rights reserved.
+//  Created by Sheshans Yadav on 7/2/17.
+//  Copyright © 2017 Sheshans Yadav. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
