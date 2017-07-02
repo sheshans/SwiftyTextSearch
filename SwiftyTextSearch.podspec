@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   s.author       = { "Sheshans Yadav" => "sheshans.r.yadav@gmail.com" }
   s.platform     = :ios, "8.0"
   
-  s.source       = { :path => '.' }
+  s.source       = { :git => "https://github.com/sheshans/SwiftyTextSearch.git", :tag => "1.0.0" }
   s.source_files = "SwiftyTextSearch", "SwiftyTextSearch/**/*.{h,m,swift}"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
 
