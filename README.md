@@ -1,6 +1,7 @@
 # SwiftyTextSearch
 
-SwiftyTextSearch Pre-processes the keyword strings to make searching faster.
+SuperFast Text Search/Suggestion engine written in Swift<br>
+SwiftyTextSearch Pre-processes the keywords/strings to make searching faster.
 
 <li> Create a SwiftyText Object <br>
 var newObj = SwiftyText()
