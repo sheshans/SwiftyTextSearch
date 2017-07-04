@@ -28,7 +28,14 @@ open class SwiftyText: NSObject,NSCoding{
         let root = aDecoder.decodeObject(forKey: PropertyKey.rootKey ) as! Node
         self.init(root: root)
     }
-    
+    public func getAllParentTitles() -> Set<String>
+    {
+        return self.root.parentTitle
+    }
+    public func isEmpty() -> Bool
+    {
+        return self.root.next.isEmpty
+    }
     
     public init( root: Node )
     {

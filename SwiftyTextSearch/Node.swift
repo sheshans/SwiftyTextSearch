@@ -32,6 +32,31 @@ open class Node: NSObject,NSCoding{
         super.init()
     }
     
+    public func isEmpty() -> Bool
+    {
+        return self.char == nil
+    }
+    
+    public func getNext() -> [String:Node]
+    {
+        return next
+    }
+    public func getCurrentChar() -> Character?
+    {
+        return char?.characters.first
+    }
+    public func getPrevChar() -> Character?
+    {
+        return prevChar?.characters.first
+    }
+    public func getParentTitles() -> Set<String>
+    {
+        return parentTitle
+    }
+    public func getPrevNode() -> Node?
+    {
+        return prevNode
+    }
     
     public init( char: String?,parentTitle: Set<String>?,next:[String:Node]?,prevChar: String? ,prevNode: Node? )
     {
